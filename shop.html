@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>We Are Sisters — Shop | Elgin, IL</title>
+<meta name="description" content="The We Are Sisters shop — bracelets, hand creams, lip balm sets, candles and gifts. Available at gatherings and in person in Elgin, IL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800;900&family=Fraunces:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="topbar">Elgin, Illinois &nbsp;·&nbsp; Gathering details coming soon</div>
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="index.html">We Are Sisters<small>Slogan goes here</small></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="shop.html" class="active">Shop</a>
+    </nav>
+    <span class="place">Elgin, IL</span>
+  </div>
+</header>
+
+<main>
+  <section class="shop-hero">
+    <div class="wrap hero-load">
+      <p class="eyebrow">The Shop</p>
+      <h1>Made to <span class="serif-accent">encourage</span></h1>
+      <p style="color:var(--muted);max-width:42rem;font-size:1.1rem">Bracelets, hand creams, lip balm sets, candles and gifts — made to carry a reminder with you. Browse here, and find us at a gathering to take one home.</p>
+    </div>
+  </section>
+
+  <div class="mission-strip">Every purchase helps keep the doors open — thank you for supporting the ministry.</div>
+
+  <section class="block" style="padding-top:20px">
+    <div class="wrap">
+      <div class="filters" role="group" aria-label="Filter products">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="bracelets">Bracelets</button>
+        <button data-filter="creams">Hand Creams</button>
+        <button data-filter="sets">Lip Balm Sets</button>
+        <button data-filter="candles">Candles</button>
+        <button data-filter="gifts">Gift &amp; More</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p style="color:var(--muted);margin-top:28px">Prices are reference prices for in-person sales in Elgin, IL. Tap any product for its description, ingredients/materials, and details.</p>
+    </div>
+  </section>
+</main>
+
+<!-- ===== Product detail (tabbed, like the mockup) ===== -->
+<dialog id="productDialog" aria-label="Product details">
+  <button class="dialog-close" id="dialogClose" aria-label="Close">&times;</button>
+  <div class="dialog-grid">
+    <div class="imgbox"><img id="dImg" alt=""></div>
+    <div class="dialog-body">
+      <span class="eyebrow" id="dCat"></span>
+      <h3 id="dName"></h3>
+      <span class="price" id="dPrice"></span>
+      <div class="tabs">
+        <div class="tab-btns">
+          <button class="active" data-tab="desc">Description</button>
+          <button data-tab="ing">Ingredients / Materials</button>
+          <button data-tab="ship">Shipping &amp; Care</button>
+        </div>
+        <div class="tab-panel active" id="tab-desc"></div>
+        <div class="tab-panel" id="tab-ing"></div>
+        <div class="tab-panel" id="tab-ship"></div>
+      </div>
+      <div class="buy-row" id="dBuy"></div>
+    </div>
+  </div>
+</dialog>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div><h4>We Are Sisters</h4><p>Lorem ipsum dolor sit amet — a ministry in Elgin, IL. The shop helps keep the doors open.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="shop.html">Shop</a></li></ul></div>
+      <div><h4>Visit</h4><ul><li>Elgin, Illinois</li><li>Gathering details coming soon</li></ul></div>
+    </div>
+    <div class="fine"><span>&copy; <span id="year"></span> We Are Sisters · Elgin, IL</span><span>Shop purchases support the ministry.</span></div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/shop.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
