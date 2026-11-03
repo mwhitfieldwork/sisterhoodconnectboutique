@@ -220,11 +220,11 @@ footer.site button:hover{color:var(--gold-soft)}
 .moment .slot { aspect-ratio: 3 / 2; min-height: 0; }
 .moment .slot:has(img) { padding: 0; overflow: hidden; }
 .moment .slot img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 0%;
-  display: block;
+  padding-top:210px;
+}
+
+.moment:nth-child(2) .slot img {
+  padding-top:10px;
 }
 
 
