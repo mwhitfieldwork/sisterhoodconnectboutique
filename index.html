@@ -1,127 +1,301 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>We Are Sisters — Home | Elgin, IL</title>
-<meta name="description" content="We Are Sisters ministry, Elgin, IL. Lorem ipsum placeholder description.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800;900&family=Fraunces:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>We Are Sisters — Elgin, IL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&display=swap" rel="stylesheet" />
+
+
+
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
-<div class="topbar">Elgin, Illinois &nbsp;·&nbsp; <!-- EDIT: gathering day/time goes here --> Gathering details coming soon</div>
+<body data-view="home">
+
+<div class="topbar"><div class="wrap"><span>Elgin, Illinois · Central Time</span><span>Gathering day &amp; time — <b>placeholder</b> · Lorem ipsum</span><span>Mockup · <b>Direction A</b></span></div></div>
+
 <header class="site">
   <div class="wrap nav">
-    <!-- EDIT: placeholder logo — replace with the real logo/name treatment -->
-    <a class="logo" href="index.html">We Are Sisters<small><!-- EDIT: replaceable slogan -->Slogan goes here</small></a>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="shop.html">Shop</a>
+    <a class="logo" href="#" data-goto="home" aria-label="We Are Sisters — home">
+      <span class="logo-mark">WS</span>
+      <span><span class="logo-name">We Are <em>Sisters</em></span><span class="logo-sub" style="display:block">Placeholder logo · Replaceable slogan here</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <button data-goto="home" aria-current="page">Home</button>
+      <button data-goto="about">About Us</button>
+      <button data-goto="shop">Shop</button>
     </nav>
-    <span class="place">Elgin, IL</span>
   </div>
 </header>
 
 <main>
-  <!-- ================= HERO ================= -->
+<!-- ================= HOME ================= -->
+<div class="view active" id="view-home">
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-load">
-        <p class="eyebrow">A ministry for women · Elgin, IL</p>
-        <h1>We are<br><span class="serif-accent">sisters,</span><br>together.</h1>
-        <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit — a place to belong, to heal, and to grow. <!-- EDIT: real welcome copy goes here --></p>
-        <div class="hero-ctas">
-          <a class="btn gold" href="about.html"><span>Our Story</span></a>
-          <a class="btn ghost" href="shop.html"><span>Visit the Shop</span></a>
+    <div class="wrap">
+      <div>
+        <p class="hero-kicker">A ministry of sisters · Elgin, IL</p>
+        <h1 class="hero-title">We are<br /><span class="serif">sisters,</span><br />we rise.</h1>
+        <p class="hero-slogan">“<span class="ph">Replaceable slogan goes here</span>” — lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="hero-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris — a house where every sister is seen, known, and sent.</p>
+        <div class="hero-cta">
+          <button class="btn btn-magenta cut-sm" data-goto="about">Plan a visit</button>
+          <button class="btn btn-ghost cut-sm" data-goto="shop">Shop to keep the doors open</button>
+        </div>
+        <div class="hero-meta">
+          <div><b>Day · TBD</b><span>Gathering time placeholder</span></div>
+          <div><b>Elgin, IL</b><span>Central Time</span></div>
+          <div><b>Lorem</b><span>Small groups weekly</span></div>
         </div>
       </div>
-      <div class="hero-photo">
-        <!-- EDIT: replace this slot with the real hero photo (portrait 4:5 works best).
-             Drop the file in images/ and swap this div for: <img src="images/hero.jpg" alt="..."> -->
-        <div class="frame photo-slot">Hero photo goes here<br>Community / ministry gathering · 4:5</div>
-        <div class="hero-badge">Every purchase helps keep the doors open</div>
+      <div class="hero-media reveal in">
+        <div class="frame"></div>
+        <div class="slot tall" role="img" aria-label="Photo placeholder: hero community photo">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14"/><circle cx="12" cy="12" r="3.5"/><path d="M3 17l5-4 4 3 4-4 5 5"/></svg>
+          <span class="slot-tag">Your photo here</span>
+          <span class="slot-name">Hero — community / ministry gathering</span>
+          <span class="slot-meta">Sisters together, joyful and natural light. Portrait orientation · 4:5 · client photo to come</span>
+        </div>
+        <div class="sticker a"><small>The shop</small>Every purchase helps keep the doors open</div>
+        <div class="sticker b">Lorem ipsum — bring a sister with you ✳</div>
       </div>
     </div>
   </section>
 
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>You are <i>beautiful</i></span><span>You are <i>enough</i></span><span>You are <i>chosen</i></span><span>You are <i>never alone</i></span><span>You are <i>always loved</i></span>
-      <span>You are <i>beautiful</i></span><span>You are <i>enough</i></span><span>You are <i>chosen</i></span><span>You are <i>never alone</i></span><span>You are <i>always loved</i></span>
-    </div>
-  </div>
+  <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marqueeTrack"></div></div>
 
-  <!-- ================= MOMENTS / WHAT WE DO ================= -->
   <section class="block">
     <div class="wrap">
       <div class="sec-head reveal">
-        <h2>Gather. Grow. <span class="serif-accent">give.</span></h2>
-        <p class="eyebrow">Lorem ipsum · What we do</p>
+        <div><p class="kicker">Gather with us</p><h2>This week at <span class="serif">the house</span></h2></div>
+        <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Three rhythms, one family — pick one and come as you are.</p>
       </div>
       <div class="grid3">
-        <article class="card reveal"><span class="num">01</span><h3>Gather</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></article>
-        <article class="card reveal d1"><span class="num">02</span><h3>Grow</h3><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></article>
-        <article class="card reveal d2"><span class="num">03</span><h3>Give</h3><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></article>
+        <article class="moment cut reveal">
+          <div class="slot short" role="img" aria-label="Photo placeholder: Sunday gathering">
+            <span class="slot-tag">Your photo here</span><span class="slot-name">Sunday gathering</span><span class="slot-meta">Worship / congregation moment · Landscape · 3:2</span>
+          </div>
+          <div class="pad"><span class="when">Weekly · Day &amp; time placeholder</span><h3>Sunday Gathering</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p></div>
+        </article>
+        <article class="moment cut reveal d1">
+          <div class="slot short" role="img" aria-label="Photo placeholder: sister circle small group">
+            <span class="slot-tag">Your photo here</span><span class="slot-name">Sister circles</span><span class="slot-meta">Small group around a table · Landscape · 3:2</span>
+          </div>
+          <div class="pad"><span class="when">Weekly · Day &amp; time placeholder</span><h3>Sister Circles</h3><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+        </article>
+        <article class="moment cut reveal d2">
+          <div class="slot short" role="img" aria-label="Photo placeholder: outreach and serving">
+            <span class="slot-tag">Your photo here</span><span class="slot-name">Serve Elgin</span><span class="slot-meta">Outreach / serving the city · Landscape · 3:2</span>
+          </div>
+          <div class="pad"><span class="when">Monthly · Saturdays</span><h3>Serve Days</h3><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="verse reveal">
-    <blockquote>&ldquo;Let all that you do be done in love.&rdquo;</blockquote>
-    <cite>1 Corinthians 16:14</cite>
-  </section>
-
-  <!-- ================= SHOP TEASER ================= -->
-  <section class="block alt">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <h2>From the <span class="serif-accent">shop</span></h2>
-        <a class="btn" href="shop.html"><span>See everything</span></a>
-      </div>
-      <p class="reveal" style="color:var(--muted);max-width:44rem;margin:-18px 0 30px">Made to encourage — bracelets, hand creams, lip balm sets, candles and gifts. Available at gatherings and in person; every purchase helps keep the doors open. Prices shown are for reference when we meet.</p>
-      <div class="product-grid" id="teaserGrid"></div>
+  <section class="verse block">
+    <div class="wrap reveal">
+      <blockquote>“Lorem ipsum dolor sit amet — she is clothed with strength and dignity, and she laughs without fear of the future.”</blockquote>
+      <cite>Proverbs 31 · Placeholder verse for mockup</cite>
     </div>
   </section>
 
-  <!-- ================= VISIT ================= -->
   <section class="block">
-    <div class="wrap grid2">
-      <div class="reveal">
-        <p class="eyebrow">Visit us</p>
-        <h2 style="font-size:clamp(2rem,4vw,3rem);font-weight:900;text-transform:uppercase;margin:10px 0 16px">You have a <span class="serif-accent" style="text-transform:none;color:var(--magenta)">seat</span> here.</h2>
-        <p style="color:var(--muted)">Lorem ipsum dolor sit amet — where we meet, when we meet, and what to expect when you walk in. <!-- EDIT: real visit details go here --></p>
-        <p><strong>Elgin, Illinois (Central Time)</strong><br><!-- EDIT: address / gathering time -->Details coming soon</p>
+    <div class="wrap">
+      <div class="grid2">
+        <div class="reveal">
+          <p class="kicker">Why a shop?</p>
+          <h2 style="font-size:clamp(2rem,4.4vw,3.2rem);font-weight:900;text-transform:uppercase;line-height:1.02;margin:10px 0 16px">Beautiful things,<br /><span class="serif" style="color:var(--magenta);text-transform:none">an open door.</span></h2>
+          <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. The We Are Sisters shop exists for one reason: every bracelet, cream, candle and gift set sold helps cover the rent, the lights, and the welcome — so the doors of this ministry stay open in Elgin.</p>
+          <p class="lede" style="margin-top:12px">Browse the collection here, then find every piece at gatherings and in person — the ministry team is right here in Elgin, IL, ready to help you choose a gift or a reminder to wear.</p>
+          <div style="margin-top:26px"><button class="btn btn-ink cut-sm" data-goto="shop">Browse the shop →</button></div>
+        </div>
+        <div class="teaser reveal d1">
+          <button class="teaser-card cut" data-open-product="bottle" style="border:0;text-align:left;padding:0;cursor:pointer">
+            <img src="images/products/bottle.jpg" alt="Purple bottle with a floral 'With Love and Thanks' label, lavender" />
+            <span class="cap"><span><b>With Love and Thanks</b><span>Lavender bottle</span></span><span class="price-chip">$10</span></span>
+          </button>
+          <button class="teaser-card cut" data-open-product="midnight" style="border:0;text-align:left;padding:0;cursor:pointer">
+            <img src="images/products/midnight.jpg" alt="Midnight Cross bracelet — black beaded bracelet with cross bead worn on a wrist" />
+            <span class="cap"><span><b>Midnight Cross</b><span>Beaded cross bracelet</span></span><span class="price-chip">$18</span></span>
+          </button>
+        </div>
       </div>
-      <!-- EDIT: replace with a real photo (landscape works best) -->
-      <div class="photo-slot reveal d1">Photo goes here<br>Our gathering place · landscape</div>
     </div>
   </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal"><div><p class="kicker">New here?</p><h2>Three steps <span class="serif">in the door</span></h2></div></div>
+      <div class="steps">
+        <div class="step reveal"><span class="num">01</span><h3>Come on a Sunday</h3><p>Lorem ipsum dolor sit amet — doors open early, coffee is on, and a sister will save you a seat.</p></div>
+        <div class="step reveal d1"><span class="num">02</span><h3>Find your circle</h3><p>Consectetur adipiscing elit, sed do eiusmod tempor. Small groups meet across Elgin through the week.</p></div>
+        <div class="step reveal d2"><span class="num">03</span><h3>Grow &amp; serve</h3><p>Ut enim ad minim veniam — teach, give, shop the ministry store, and help keep the welcome wide.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<div class="view" id="view-about">
+  <section class="block" style="padding-bottom:30px">
+    <div class="wrap">
+      <p class="kicker reveal">About us</p>
+      <h2 class="reveal" style="font-size:clamp(2.6rem,6vw,4.6rem);font-weight:900;text-transform:uppercase;line-height:.98;margin:14px 0 18px">A house built<br />by <span class="serif" style="color:var(--magenta);text-transform:none">sisters,</span> for sisters.</h2>
+      <p class="lede reveal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We Are Sisters is a women's ministry in Elgin, Illinois — lorem ipsum placeholder story copy for this mockup, ready to be replaced with the real story.</p>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:20px">
+    <div class="wrap grid2">
+      <div class="slot tall reveal" role="img" aria-label="Photo placeholder: our story photo">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14"/><circle cx="12" cy="12" r="3.5"/><path d="M3 17l5-4 4 3 4-4 5 5"/></svg>
+        <span class="slot-tag">Your photo here</span>
+        <span class="slot-name">Our story — the sisters together</span>
+        <span class="slot-meta">Founding gathering or group portrait · Landscape · 4:3 · client photo to come</span>
+      </div>
+      <div class="reveal d1">
+        <p class="kicker">Our story</p>
+        <h3 style="font-size:1.9rem;font-weight:900;margin:10px 0 14px;line-height:1.1">Lorem ipsum began around one kitchen table.</h3>
+        <p style="color:var(--ink-soft)">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p style="color:var(--ink-soft)">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p style="color:var(--ink-soft)">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:10px">
+    <div class="wrap">
+      <div class="sec-head reveal"><div><p class="kicker">What we hold</p><h2>Our <span class="serif">values</span></h2></div></div>
+      <div class="values">
+        <div class="value cut-sm reveal"><span class="glyph">✳</span><h3>Sisterhood</h3><p>Lorem ipsum dolor sit amet — no sister walks alone in this house.</p></div>
+        <div class="value cut-sm reveal d1"><span class="glyph">✚</span><h3>Faith</h3><p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p></div>
+        <div class="value cut-sm reveal d2"><span class="glyph">❋</span><h3>Welcome</h3><p>Ut enim ad minim veniam — the door, and the table, stay open.</p></div>
+        <div class="value cut-sm reveal d3"><span class="glyph">✦</span><h3>Generosity</h3><p>Duis aute irure dolor — we give, we serve, we shop with purpose.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:10px">
+    <div class="wrap grid2" style="align-items:start">
+      <div class="reveal">
+        <p class="kicker">The journey</p>
+        <h3 style="font-size:1.9rem;font-weight:900;margin:10px 0 26px">Lorem milestones</h3>
+        <div class="timeline">
+          <div class="t"><span class="yr">Year One</span><h3>The first circle</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit — twelve sisters, one living room in Elgin.</p></div>
+          <div class="t"><span class="yr">Year Two</span><h3>A room of our own</h3><p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, quis nostrud exercitation.</p></div>
+          <div class="t"><span class="yr">Today</span><h3>The shop opens</h3><p>Ut enim ad minim veniam — the store launches so every purchase helps keep the doors open.</p></div>
+        </div>
+      </div>
+      <div>
+        <p class="kicker reveal">The sisters leading</p>
+        <h3 class="reveal" style="font-size:1.9rem;font-weight:900;margin:10px 0 26px">Faces to come</h3>
+        <div class="people" style="grid-template-columns:1fr">
+          <article class="person cut reveal">
+            <div class="slot" role="img" aria-label="Photo placeholder: founder portrait" style="min-height:250px">
+              <span class="slot-tag">Your photo here</span><span class="slot-name">Founder / lead sister portrait</span><span class="slot-meta">Head-and-shoulders · Portrait · 3:4</span>
+            </div>
+            <div class="pad"><span class="role">Founder — name placeholder</span><h3>Lorem Ipsum Name</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit — short leader bio placeholder.</p></div>
+          </article>
+          <article class="person cut reveal d1">
+            <div class="slot" role="img" aria-label="Photo placeholder: leader portrait" style="min-height:250px">
+              <span class="slot-tag">Your photo here</span><span class="slot-name">Leader portrait</span><span class="slot-meta">Head-and-shoulders · Portrait · 3:4</span>
+            </div>
+            <div class="pad"><span class="role">Circles lead — name placeholder</span><h3>Lorem Ipsum Name</h3><p>Sed do eiusmod tempor incididunt — short leader bio placeholder.</p></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= SHOP ================= -->
+<div class="view" id="view-shop">
+  <section class="shop-hero">
+    <div class="wrap">
+      <span class="mock-tag">Mockup prices — for approval</span>
+      <h2>The <span class="serif">Sisters</span> Shop</h2>
+      <p class="lede">Bracelets, hand creams, lip balm sets, candles and gifts — lorem ipsum placeholder copy throughout. Prices, descriptions and ingredient lists are invented for this mockup and get replaced with the real ones before launch.</p>
+      <div class="mission-strip cut-sm">
+        <span style="font-size:1.4rem" aria-hidden="true">✳</span>
+        <p><b>Every purchase helps keep the doors open.</b> Browse the collection here — every piece is available at gatherings &amp; in person from the ministry team in <b>Elgin, IL</b>.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="filters" id="filters" role="group" aria-label="Filter products by category"></div>
+      <p class="count-note" id="countNote"></p>
+      <div class="pgrid" id="pgrid"></div>
+      <div style="height:60px"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= PRODUCT DETAIL ================= -->
+<div class="view" id="view-product">
+  <div class="wrap">
+    <button class="crumb" data-goto="shop">← Back to the Shop</button>
+    <div class="detail">
+      <div class="imgbox cut"><img id="dImg" src="images/products/giftset.jpg" alt="Done in Love gift set — tumbler, journal, pen and keychain" /></div>
+      <div>
+        <span class="ph-note">Mockup price &amp; copy</span>
+        <p class="kicker" id="dCat" style="margin-top:14px"></p>
+        <h2 id="dName"></h2>
+        <p class="dprice"><span id="dPrice"></span></p>
+        <p class="short" id="dShort"></p>
+        <p class="avail-note">Available at gatherings &amp; in person</p>
+        <div class="tabs">
+          <div class="tablist" role="tablist" id="tablist">
+            <button role="tab" data-tab="desc" aria-selected="true">Description</button>
+            <button role="tab" data-tab="ing" aria-selected="false" id="ingTabBtn">Ingredients / Materials</button>
+            <button role="tab" data-tab="ship" aria-selected="false">Shipping &amp; Care</button>
+          </div>
+          <div class="tabpanel" id="panel-desc" role="tabpanel"></div>
+          <div class="tabpanel" id="panel-ing" role="tabpanel" hidden></div>
+          <div class="tabpanel" id="panel-ship" role="tabpanel" hidden>
+            <p><b>Ships from Elgin, IL.</b> Orders are packed with care and shipped by the We Are Sisters ministry team — no warehouse, no middleman. Lorem ipsum placeholder shipping copy for this mockup: orders leave Elgin within 2–3 business days, tracking by email.</p>
+            <p>Local pickup in Elgin can be arranged at gatherings. Lorem ipsum returns placeholder: unworn / unused items may be returned within 30 days.</p>
+            <p id="shipCare"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height:50px"></div>
+  </div>
+</div>
 </main>
 
 <footer class="site">
   <div class="wrap">
-    <div class="cols">
+    <div class="fgrid">
       <div>
-        <h4>We Are Sisters</h4>
-        <p>Lorem ipsum dolor sit amet — a ministry in Elgin, IL. The shop helps keep the doors open.</p>
+        <span class="logo-name" style="color:#fff;font-size:1.3rem">We Are <em style="font-family:Fraunces,serif;font-style:italic;text-transform:none;color:var(--gold-soft)">Sisters</em></span>
+        <p style="max-width:38ch">Placeholder logo &amp; replaceable slogan. A women's ministry in Elgin, Illinois — Central Time. Lorem ipsum footer copy for mockup.</p>
+        <p>Weekly gatherings · Elgin, IL (day &amp; time placeholder)</p>
       </div>
-      <div>
-        <h4>Explore</h4>
-        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="shop.html">Shop</a></li></ul>
-      </div>
-      <div>
-        <h4>Visit</h4>
-        <ul><li>Elgin, Illinois</li><li><!-- EDIT: gathering details -->Gathering details coming soon</li></ul>
-      </div>
+      <div><h4>Explore</h4><ul>
+        <li><button data-goto="home">Home</button></li>
+        <li><button data-goto="about">About Us</button></li>
+        <li><button data-goto="shop">Shop</button></li>
+      </ul></div>
+      <div><h4>The Shop</h4><ul>
+        <li><button data-cat-link="bracelets">Bracelets</button></li>
+        <li><button data-cat-link="creams">Hand Creams</button></li>
+        <li><button data-cat-link="sets">Lip Balm Sets</button></li>
+        <li><button data-cat-link="candles">Candles</button></li>
+        <li><button data-cat-link="gifts">Gift Set</button></li>
+      </ul></div>
     </div>
-    <div class="fine"><span>&copy; <span id="year"></span> We Are Sisters · Elgin, IL</span><span>Shop purchases support the ministry.</span></div>
+    <div class="fbottom"><span>© 2026 We Are Sisters · Elgin, IL — design mockup, Direction A</span><span>Next step after approval: HTML build with motion · Shop as an in-person reference</span></div>
   </div>
 </footer>
 
-<script src="js/products.js"></script>
-<script src="js/shop.js"></script>
-<script src="js/main.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
