@@ -9,18 +9,9 @@
   --line:rgba(38,18,31,.16);
   --slot-bg:#EFE3D2; --slot-line:#B99B78; --slot-ink:#7A5C36;
   --shadow:0 18px 40px -18px rgba(42,10,32,.35);
-  color-scheme:light;
+  color-scheme:light only;
 }
-@media (prefers-color-scheme: dark){
-  :root{
-    --paper:#1D0E19; --paper2:#26121F; --card:#2A1524;
-    --ink:#F7EBDD; --ink-soft:#CDB4C2;
-    --line:rgba(247,235,221,.18);
-    --slot-bg:#331A2B; --slot-line:#8A5A78; --slot-ink:#D9A8C4;
-    --shadow:0 18px 40px -18px rgba(0,0,0,.7);
-    color-scheme:dark;
-  }
-}
+
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"Archivo",system-ui,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
