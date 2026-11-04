@@ -156,7 +156,7 @@ document.querySelectorAll("#tablist button").forEach(function(b){
 });
 /* ---------- marquee ---------- */
 (function(){
-  var words = ["We are sisters","Elgin, IL","Central Time","Every purchase keeps the doors open","Lorem ipsum","Bring a sister"];
+  var words = ["We are sisters","Join Us","Saturdays @ 5:30pm","Shop With Us ","Be Encouraged","Uplift One Another"];
   var half = words.map(function(w){ return "<span>" + w + "</span><span class='dot'>✳</span>"; }).join("");
   document.getElementById("marqueeTrack").innerHTML = half + half;
 })();
